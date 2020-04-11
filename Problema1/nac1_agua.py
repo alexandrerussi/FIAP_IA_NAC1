@@ -29,8 +29,8 @@ temp_F_plot = temp_F.reshape(-1, 1)
 # plotando pontos sem regressão linear
 plt.scatter(temp_F_plot, pressure, color='blue')
 plt.xlabel("Temperatura (F)")
-plt.ylabel("Pressão (bar)")
-plt.title("Ponto de ebulição da água em diferentes pressões barométricas")
+plt.ylabel("Pressão (inHg)")
+# plt.title("Ponto de ebulição da água em diferentes pressões barométricas")
 plt.savefig("temperatura_pressao_noregression.png")
 
 # X = np.asarray([ 1994.,  1995.,  1996.,  1997.,  1998.,  1999.])
@@ -50,8 +50,8 @@ y_pressure_predict = linear_reg.predict(temp_F_plot)
 plt.scatter(temp_F_plot, pressure, color='blue')
 plt.plot(temp_F_plot, y_pressure_predict, color='red')
 plt.xlabel("Temperatura (F)")
-plt.ylabel("Pressão (bar)")
-plt.title("Regressão Linear: ponto de ebulição da água em \ndiferentes pressões barométricas")
+plt.ylabel("Pressão (inHg)")
+# plt.title("Regressão Linear: ponto de ebulição da água em \ndiferentes pressões barométricas")
 plt.savefig("temperatura_pressao_regression.png")
 
 # valor de pressão em 200F

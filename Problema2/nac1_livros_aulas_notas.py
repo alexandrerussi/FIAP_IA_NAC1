@@ -47,6 +47,6 @@ ax.plot_trisurf(qtd_livros, freq_aulas, z_predict, linewidth=0, antialiased=Fals
 ax.set_xlabel('Livros')
 ax.set_ylabel('Freq Aulas')
 ax.set_zlabel('Nota')
-plt.title("Livros lidos e Aulas assistidas x Notas finais")
+# plt.title("Livros lidos e Aulas assistidas x Notas finais")
 plt.savefig("livros_aulas_notas.png")
 plt.show()
